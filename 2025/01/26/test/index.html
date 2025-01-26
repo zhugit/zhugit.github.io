@@ -19,21 +19,30 @@
   <meta name="author" content="zmq">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="这篇文章会教你如何在服务器上运行 clash，从而让任意浏览器可以随时随地访问。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://zhugit.github.io/2025/01/26/hello-world/index.html">
+<meta property="og:title" content="代理部署到服务器">
+<meta property="og:url" content="https://zhugit.github.io/2025/01/26/test/index.html">
 <meta property="og:site_name" content="zmq的博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="这篇文章会教你如何在服务器上运行 clash，从而让任意浏览器可以随时随地访问。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-01-26T13:43:30.690Z">
-<meta property="article:modified_time" content="2025-01-26T13:43:30.690Z">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C1.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C2.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C3.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C4.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C5.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C6.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C7.png">
+<meta property="og:image" content="https://zhugit.github.io/test_image%5C8.png">
+<meta property="article:published_time" content="2025-01-26T13:59:12.785Z">
+<meta property="article:modified_time" content="2025-01-26T14:54:54.348Z">
 <meta property="article:author" content="zmq">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://zhugit.github.io/test_image%5C1.png">
   
   
   
-  <title>Hello World - zmq的博客</title>
+  <title>代理部署到服务器 - zmq的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +208,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="代理部署到服务器"></span>
           
         </div>
 
@@ -210,7 +219,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-01-26 21:43" pubdate>
+        <time datetime="2025-01-26 21:59" pubdate>
           2025年1月26日 晚上
         </time>
       </span>
@@ -222,7 +231,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          18 字
+          901 字
         
       </span>
     
@@ -233,7 +242,7 @@
         
         
         
-          1 分钟
+          8 分钟
         
       </span>
     
@@ -270,24 +279,46 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">代理部署到服务器</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h2 id="步骤-1：下载并提取-Clash-Verge-内核"><a href="#步骤-1：下载并提取-Clash-Verge-内核" class="headerlink" title="步骤 1：下载并提取 Clash Verge 内核"></a>步骤 1：下载并提取 Clash Verge 内核</h2><h3 id="1-下载-Clash-Verge-的-deb-包："><a href="#1-下载-Clash-Verge-的-deb-包：" class="headerlink" title="1.下载 Clash Verge 的 .deb 包："></a>1.下载 Clash Verge 的 .deb 包：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ wget https://github.com/zzzgydi/clash-verge/releases/download/v1.3.8/clash-verge_1.3.8_amd64.deb  <br></code></pre></td></tr></table></figure>
+<h3 id="2-解压-deb-包："><a href="#2-解压-deb-包：" class="headerlink" title="2.解压 .deb 包："></a>2.解压 .deb 包：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ dpkg-deb -x clash-verge_1.3.8_amd64.deb clash-verge  <br></code></pre></td></tr></table></figure>
+<h3 id="3-找到并复制内核："><a href="#3-找到并复制内核：" class="headerlink" title="3.找到并复制内核："></a>3.找到并复制内核：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ <span class="hljs-built_in">sudo</span> <span class="hljs-built_in">cp</span> clash-verge/usr/bin/clash /usr/local/bin/  <br>$ <span class="hljs-built_in">sudo</span> <span class="hljs-built_in">chmod</span> +x /usr/local/bin/clash  <br></code></pre></td></tr></table></figure>
+<h3 id="4-验证内核是否可用："><a href="#4-验证内核是否可用：" class="headerlink" title="4.验证内核是否可用："></a>4.验证内核是否可用：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ clash -v<br></code></pre></td></tr></table></figure>
+<p>如果输出版本信息，说明内核已正确安装。</p>
+<p><img src="/test_image%5C1.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="步骤-2：配置-Clash"><a href="#步骤-2：配置-Clash" class="headerlink" title="步骤 2：配置 Clash"></a>步骤 2：配置 Clash</h2><h3 id="1-创建配置目录："><a href="#1-创建配置目录：" class="headerlink" title="1.创建配置目录："></a>1.创建配置目录：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">mkdir</span> -p ~/.config/clash<br></code></pre></td></tr></table></figure>
+<p><img src="/test_image%5C2.png" srcset="/img/loading.gif" lazyload><br>下载购买的订阅地址，并用<a target="_blank" rel="noopener" href="https://sub.789.st/">在线订阅转换</a><br><img src="/test_image%5C3.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="2-使用正确的订阅链接步骤"><a href="#2-使用正确的订阅链接步骤" class="headerlink" title="2.使用正确的订阅链接步骤"></a>2.使用正确的订阅链接步骤</h3><p>复制 Subconverter 生成的订阅链接，类似于：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">https://sub.789.st/sub?target=clash&amp;url=http%3A%2F%2F13.215.48.59%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D8d8af1ff3448a4df321b67de31518695  <br></code></pre></td></tr></table></figure>
+<p>在服务器上使用 curl 命令下载订阅配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -o ~/.config/clash/config.yaml <span class="hljs-string">&quot;[https://sub.789.st/sub?target=clash&amp;url=http%3A%2F%2Fxxx.xxx.xxx.xxx%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%](https://sub.789.st/sub?target=clash&amp;url=http://xxx.xxx.xxx.xxx/api/v1/client/subscribe?token=)&quot;</span>  <br></code></pre></td></tr></table></figure>
+<p>检查下载的配置文件是否包含节点信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cat</span> ~/.config/clash/config.yaml  <br></code></pre></td></tr></table></figure>
+<p>确保文件中有 <code>proxies</code> 和 <code>proxy-groups</code> 的内容。</p>
+<p>为什么要使用转换后的订阅链接？<br>你的原始订阅是Base64编码的vmess链接，Clash需要的是YAML格式的配置文件。使用 Subconverter转换后，可以生成适配Clash的YAML文件格式。</p>
+<h3 id="3-运行clash"><a href="#3-运行clash" class="headerlink" title="3.运行clash"></a>3.运行clash</h3><p><img src="/test_image%5C4.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="步骤3-云服务器的安全组开放端口"><a href="#步骤3-云服务器的安全组开放端口" class="headerlink" title="步骤3.云服务器的安全组开放端口"></a>步骤3.云服务器的安全组开放端口</h2><p>如果你使用的是云服务器（例如阿里云、腾讯云、AWS 等），除了检查服务器内部的防火墙，还需要检查 云服务商的安全组，确保入站规则允许 7890 和 7891 端口的外部访问。<br>操作步骤（以阿里云为例）： 登录 阿里云控制台。 进入 ECS 实例管理。 找到你的服务器实例，进入 安全组配置。 在 入站规则 中，添加以下规则： 端口范围：7890 和 7891 协议类型：TCP 授权对象：0.0.0.0&#x2F;0（允许所有 IP 访问） 保存后，安全组规则会立即生效。<br><img src="/test_image%5C5.png" srcset="/img/loading.gif" lazyload><br>虽然 Clash 已经监听了 7890 端口，但服务器的防火墙可能阻挡了外部访问<br>检查防火墙规则<br>运行以下命令，检查防火墙状态：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> ufw status<br></code></pre></td></tr></table></figure>
+<p>如果端口未开放，可以使用以下命令添加规则：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> ufw allow 7890<br><span class="hljs-built_in">sudo</span> ufw allow 7891<br><span class="hljs-built_in">sudo</span> ufw reload<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>通过 Clash API 手动切换节点<br>Clash 提供了一个 API，可以用来实时切换节点，而不需要修改配置文件。你可以通过以下步骤切换：<br>安装 curl 工具（如果未安装）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt install curl<br></code></pre></td></tr></table></figure>
+<p>运行以下命令，可切换节点为 日本-1：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -X PUT <span class="hljs-string">&quot;[http://127.0.0.1:9090/proxies/🔰 节点选择](http://127.0.0.1:9090/proxies/🔰 节点选择)&quot;</span> -H <span class="hljs-string">&quot;Content-Type: application/json&quot;</span> -d <span class="hljs-string">&#x27;&#123;&quot;name&quot;: &quot;日本-1&quot;&#125;&#x27;</span><br></code></pre></td></tr></table></figure>
+<p>验证切换结果 启动 Clash 后，查看日志输出。 如果日志中显示了 proxy&#x3D;日本-1，说明切换成功。<br><img src="/test_image%5C6.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="使用-screen-工具，保持代理一直在服务器上运行"><a href="#使用-screen-工具，保持代理一直在服务器上运行" class="headerlink" title="使用 screen 工具，保持代理一直在服务器上运行"></a>使用 screen 工具，保持代理一直在服务器上运行</h2><p>screen 可以创建一个虚拟的终端会话，即使你关闭 XShell，虚拟终端仍然保持运行，进程不会退出。</p>
+<h3 id="1-安装-screen（如果未安装）："><a href="#1-安装-screen（如果未安装）：" class="headerlink" title="1.安装 screen（如果未安装）："></a>1.安装 screen（如果未安装）：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt install screen<br></code></pre></td></tr></table></figure>
+<h3 id="2-启动一个新的-screen-会话："><a href="#2-启动一个新的-screen-会话：" class="headerlink" title="2.启动一个新的 screen 会话："></a>2.启动一个新的 screen 会话：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">screen -S clash<br></code></pre></td></tr></table></figure>
+<h3 id="3-在-screen-会话中运行-Clash："><a href="#3-在-screen-会话中运行-Clash：" class="headerlink" title="3.在 screen 会话中运行 Clash："></a>3.在 screen 会话中运行 Clash：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">clash -d ~/.config/clash <span class="hljs-comment">#or clash</span><br></code></pre></td></tr></table></figure>
+<h3 id="4-按下-Ctrl-A，然后按-D，将-screen-会话“分离”（detach），这样即使关闭-XShell，Clash-也会继续运行。"><a href="#4-按下-Ctrl-A，然后按-D，将-screen-会话“分离”（detach），这样即使关闭-XShell，Clash-也会继续运行。" class="headerlink" title="4.按下 Ctrl + A，然后按 D，将 screen 会话“分离”（detach），这样即使关闭 XShell，Clash 也会继续运行。"></a>4.按下 Ctrl + A，然后按 D，将 screen 会话“分离”（detach），这样即使关闭 XShell，Clash 也会继续运行。</h3><h3 id="5-恢复-screen-会话："><a href="#5-恢复-screen-会话：" class="headerlink" title="5.恢复 screen 会话："></a>5.恢复 screen 会话：</h3><p>当你重新连接服务器后，可以通过以下命令恢复 screen 会话：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">screen -r clash<br></code></pre></td></tr></table></figure>
+<h2 id="安装扩展-FoxyProxy"><a href="#安装扩展-FoxyProxy" class="headerlink" title="安装扩展 FoxyProxy"></a>安装扩展 FoxyProxy</h2><p><img src="/test_image%5C7.png" srcset="/img/loading.gif" lazyload><br>添加&lt;服务器IP:7890&gt;<br><img src="/test_image%5C8.png" srcset="/img/loading.gif" lazyload></p>
+<p>这样就可以在任意浏览器上挂代理了</p>
 
                 
               </div>
@@ -305,8 +336,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://zhugit.github.io/2025/01/26/hello-world/</div>
+      <div>代理部署到服务器</div>
+      <div>https://zhugit.github.io/2025/01/26/test/</div>
     </div>
     <div class="license-meta">
       
@@ -350,15 +381,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/01/26/test/" title="代理部署到服务器">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">代理部署到服务器</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/01/26/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
