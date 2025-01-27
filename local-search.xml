@@ -4,33 +4,6 @@
   
   
   <entry>
-    <title>My First Blog</title>
-    <link href="/2025/01/27/my-first-blog/"/>
-    <url>/2025/01/27/my-first-blog/</url>
-    
-    <content type="html"><![CDATA[<p>This is my first blog post. Welcome to my new Hexo-powered site!</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Tech</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Hexo</tag>
-      
-      <tag>Blogging</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>代理部署到服务器</title>
     <link href="/2025/01/26/test/"/>
     <url>/2025/01/26/test/</url>
