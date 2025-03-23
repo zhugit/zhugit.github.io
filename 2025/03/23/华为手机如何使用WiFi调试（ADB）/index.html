@@ -19,31 +19,31 @@
   <meta name="author" content="zmq">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这篇文章会教你如何在github搭建属于自己的博客">
+    <meta name="description" content="这篇文章会教你在app开发时华为手机如何使用WiFi调试">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何在github上搭建自己的博客">
-<meta property="og:url" content="https://zhugit.github.io/2025/03/16/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="华为手机如何使用WiFi调试（ADB）">
+<meta property="og:url" content="https://zhugit.github.io/2025/03/23/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/index.html">
 <meta property="og:site_name" content="zmq的博客">
-<meta property="og:description" content="这篇文章会教你如何在github搭建属于自己的博客">
+<meta property="og:description" content="这篇文章会教你在app开发时华为手机如何使用WiFi调试">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/2.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/3.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/4.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/5.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/6.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/7.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/8.png">
-<meta property="og:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/9.png">
-<meta property="article:published_time" content="2025-03-16T15:52:43.812Z">
-<meta property="article:modified_time" content="2025-03-20T07:45:45.432Z">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/1.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/2.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/3.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/4.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/5.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/6.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/7.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/8.png">
+<meta property="og:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/9.png">
+<meta property="article:published_time" content="2025-03-23T07:50:55.798Z">
+<meta property="article:modified_time" content="2025-03-23T08:32:37.418Z">
 <meta property="article:author" content="zmq">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://zhugit.github.io/images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.png">
+<meta name="twitter:image" content="https://zhugit.github.io/images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/1.png">
   
   
   
-  <title>如何在github上搭建自己的博客 - zmq的博客</title>
+  <title>华为手机如何使用WiFi调试（ADB） - zmq的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +222,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="如何在github上搭建自己的博客"></span>
+            <span id="subtitle" data-typed-text="华为手机如何使用WiFi调试（ADB）"></span>
           
         </div>
 
@@ -233,8 +233,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-03-16 23:52" pubdate>
-          2025年3月16日 晚上
+        <time datetime="2025-03-23 15:50" pubdate>
+          2025年3月23日 下午
         </time>
       </span>
     
@@ -245,7 +245,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          404 字
+          858 字
         
       </span>
     
@@ -256,7 +256,7 @@
         
         
         
-          4 分钟
+          8 分钟
         
       </span>
     
@@ -302,24 +302,108 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">如何在github上搭建自己的博客</h1>
+            <h1 id="seo-header">华为手机如何使用WiFi调试（ADB）</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="博客"><a href="#博客" class="headerlink" title="博客"></a>博客</h3><p>为什么要写博客？写博客有必要吗？为什么要搭建自己的博客？<br>1.写博客有助于整理个人的思路和知识。<br>2.写博客有助于扩展自己的社交圈子。<br>3.写博客有助于提升个人的写作和宣传能力。<br>4.最好不要使用现成的技术网站，那没意思，不够硬核。要搞就自己建站，那逼格蹭蹭蹭的就上去了。<br><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/1.png" srcset="/img/loading.gif" lazyload></p>
-<h2 id="步骤一：安装hexo"><a href="#步骤一：安装hexo" class="headerlink" title="步骤一：安装hexo"></a>步骤一：安装hexo</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install hexo-cli -g<br></code></pre></td></tr></table></figure>
-<p>什么是 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>？<br>Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
-<h3 id="1-安装验证"><a href="#1-安装验证" class="headerlink" title="1.安装验证"></a>1.安装验证</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo -vsion<br></code></pre></td></tr></table></figure>
-<p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/2.png" srcset="/img/loading.gif" lazyload><br>出现版本号即安装成功</p>
-<h2 id="步骤二：本地搭建博客"><a href="#步骤二：本地搭建博客" class="headerlink" title="步骤二：本地搭建博客"></a>步骤二：本地搭建博客</h2><h3 id="1-初始化"><a href="#1-初始化" class="headerlink" title="1.初始化"></a>1.初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init myblog<br><span class="hljs-built_in">cd</span> myblog<br>npm install<br></code></pre></td></tr></table></figure>
-<p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/3.png" srcset="/img/loading.gif" lazyload alt="初始化项目文件"><br>_config.yml 存放的是博客配置信息， source&#x2F;_posts 是存放文章的地方。</p>
-<h3 id="2-运行默认主题"><a href="#2-运行默认主题" class="headerlink" title="2.运行默认主题"></a>2.运行默认主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean         <span class="hljs-comment"># 清除缓存文件，建议写完文章后执行一次</span><br>hexo generate(g) 	<span class="hljs-comment"># 生成 public 文件夹，写完文章执行</span><br>hexo serve(s)		<span class="hljs-comment"># 启动 hexo 服务</span><br></code></pre></td></tr></table></figure>
-<p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/4.png" srcset="/img/loading.gif" lazyload alt="正在运行"><br>执行命令后访问<a target="_blank" rel="noopener" href="http://localhost:4000/">本地4000端口</a>（默认）<br><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/5.png" srcset="/img/loading.gif" lazyload alt="默认主题样式"><br>至此本地部署已完成，肯定还没完，因为我们需要让别人也可以去看我们的文章，那我们就需要用到<a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a><br><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/6.png" srcset="/img/loading.gif" lazyload></p>
-<p>首先我们先注册github账号（国外vpn访问）</p>
-<h2 id="步骤三：使用github-pages"><a href="#步骤三：使用github-pages" class="headerlink" title="步骤三：使用github pages"></a>步骤三：使用github pages</h2><h3 id="1-登录后，点击右上角头像选择-Your-repositories"><a href="#1-登录后，点击右上角头像选择-Your-repositories" class="headerlink" title="1.登录后，点击右上角头像选择 Your repositories"></a>1.登录后，点击右上角头像选择 Your repositories</h3><p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/7.png" srcset="/img/loading.gif" lazyload></p>
-<h3 id="2-点击新建项目（NEW）"><a href="#2-点击新建项目（NEW）" class="headerlink" title="2.点击新建项目（NEW）"></a>2.点击新建项目（NEW）</h3><p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/8.png" srcset="/img/loading.gif" lazyload></p>
-<h3 id="3-命名形式为-github的用户名-github-io（我测试过如果不用github的用户名将访问不到）"><a href="#3-命名形式为-github的用户名-github-io（我测试过如果不用github的用户名将访问不到）" class="headerlink" title="3.命名形式为: github的用户名.github.io（我测试过如果不用github的用户名将访问不到）"></a>3.命名形式为: github的用户名.github.io（我测试过如果不用github的用户名将访问不到）</h3><p><img src="/../images/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/9.png" srcset="/img/loading.gif" lazyload></p>
+                <h1 id="华为手机-ADB-无线调试（Wi-Fi-调试）完整教程【一步到位】"><a href="#华为手机-ADB-无线调试（Wi-Fi-调试）完整教程【一步到位】" class="headerlink" title="华为手机 ADB 无线调试（Wi-Fi 调试）完整教程【一步到位】"></a>华为手机 ADB 无线调试（Wi-Fi 调试）完整教程【一步到位】</h1><blockquote>
+<p>🎯 适用于：华为 &#x2F; 荣耀 EMUI 系统手机<br>🛠 需求环境：已安装 Android Studio 或 platform-tools，具备 adb 命令行环境<br>🚀 目标：实现 <strong>电脑通过 Wi-Fi 无线连接手机进行 ADB 调试</strong>，无需长期插 USB</p>
+</blockquote>
+<hr>
+<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><ul>
+<li>✅ 已安装 Android Studio 或 ADB 工具</li>
+<li>✅ 手机已打开开发者选项</li>
+<li>✅ 手机与电脑连接同一 Wi-Fi 网络</li>
+<li>✅ 有一根原装或优质 USB 数据线</li>
+</ul>
+<hr>
+<h2 id="二、开启开发者选项与-USB-调试"><a href="#二、开启开发者选项与-USB-调试" class="headerlink" title="二、开启开发者选项与 USB 调试"></a>二、开启开发者选项与 USB 调试</h2><ol>
+<li>打开手机 <strong>设置 → 关于手机</strong></li>
+<li>连续点击“版本号”7次，开启开发者模式</li>
+<li>返回 <strong>设置 → 系统与更新 → 开发人员选项</strong></li>
+<li>打开以下选项：<ul>
+<li><code>USB 调试</code></li>
+<li><code>保持唤醒状态</code></li>
+<li>若有“仅充电禁用 ADB”请关闭</li>
+</ul>
+</li>
+<li>使用 USB 数据线连接手机至电脑</li>
+<li>设置 USB 模式为：<strong>文件传输（MTP）</strong></li>
+<li>查看手机是否弹出授权提示：<ul>
+<li>勾选 “<strong>始终允许来自此计算机的调试</strong>”</li>
+<li>点击 “<strong>允许</strong>”<br><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/1.png" srcset="/img/loading.gif" lazyload><br><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/2.png" srcset="/img/loading.gif" lazyload></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="三、检查-USB-ADB-是否连接成功"><a href="#三、检查-USB-ADB-是否连接成功" class="headerlink" title="三、检查 USB ADB 是否连接成功"></a>三、检查 USB ADB 是否连接成功</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb devices<br></code></pre></td></tr></table></figure>
+<p>输出示例：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs arduino">List of devices attached<br><span class="hljs-number">2</span>MH0XXXXXX    device<br></code></pre></td></tr></table></figure>
+<p><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/3.png" srcset="/img/loading.gif" lazyload><br>如果显示 <code>unauthorized</code>，请在手机点击授权。如果设备列表为空，尝试更换数据线、USB 接口或重新插拔。</p>
+<hr>
+<h2 id="四、获取手机当前-Wi-Fi-IP-地址"><a href="#四、获取手机当前-Wi-Fi-IP-地址" class="headerlink" title="四、获取手机当前 Wi-Fi IP 地址"></a>四、获取手机当前 Wi-Fi IP 地址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb shell ip addr show wlan0<br></code></pre></td></tr></table></figure>
+<p><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/4.png" srcset="/img/loading.gif" lazyload><br>查找返回内容中的：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">inet</span> <span class="hljs-number">192.168.43.254</span>/<span class="hljs-number">24</span><br></code></pre></td></tr></table></figure>
+
+<p><code>192.168.43.254</code> 就是你手机的 IP 地址，记下来备用。</p>
+<hr>
+<h2 id="五、启用-TCP-模式（Wi-Fi-调试端口）"><a href="#五、启用-TCP-模式（Wi-Fi-调试端口）" class="headerlink" title="五、启用 TCP 模式（Wi-Fi 调试端口）"></a>五、启用 TCP 模式（Wi-Fi 调试端口）</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb tcpip 5555<br></code></pre></td></tr></table></figure>
+
+<p>成功提示：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">restarting in TCP mode port:</span> <span class="hljs-number">5555</span><br></code></pre></td></tr></table></figure>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/5.png" srcset="/img/loading.gif" lazyload></h2><h2 id="六、连接手机的-IP-地址"><a href="#六、连接手机的-IP-地址" class="headerlink" title="六、连接手机的 IP 地址"></a>六、连接手机的 IP 地址</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb connect 192.168.43.254:5555<br></code></pre></td></tr></table></figure>
+
+<p>成功提示：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">connected</span> to <span class="hljs-number">192.168.43.254:5555</span><br></code></pre></td></tr></table></figure>
+<h2 id="注意一定要先在手机端确认调试再连接"><a href="#注意一定要先在手机端确认调试再连接" class="headerlink" title="注意一定要先在手机端确认调试再连接"></a><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/6.png" srcset="/img/loading.gif" lazyload><br>注意一定要先在手机端确认调试再连接</h2><h2 id="七、断开-USB，验证-Wi-Fi-是否连接成功"><a href="#七、断开-USB，验证-Wi-Fi-是否连接成功" class="headerlink" title="七、断开 USB，验证 Wi-Fi 是否连接成功"></a>七、断开 USB，验证 Wi-Fi 是否连接成功</h2><p>现在可以拔掉 USB，执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb devices<br></code></pre></td></tr></table></figure>
+
+<p>返回示例：</p>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs accesslog">List of devices attached<br><span class="hljs-number">192.168.43.254:5555</span>    device<br></code></pre></td></tr></table></figure>
+<p><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/7.png" srcset="/img/loading.gif" lazyload><br>恭喜你，已成功开启无线调试模式！</p>
+<hr>
+<p>然后我们就可以在Android Studio找到我们的实体机<br><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/8.png" srcset="/img/loading.gif" lazyload><br>至此我们就可以愉快的在我们自己的华为手机测试自己写的app了！<br><img src="/../images/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/9.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="🛠-常见问题解决"><a href="#🛠-常见问题解决" class="headerlink" title="🛠 常见问题解决"></a>🛠 常见问题解决</h2><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>device offline</code></td>
+<td>手机未授权或授权失效，重新插拔 USB，撤销授权并重新允许</td>
+</tr>
+<tr>
+<td><code>unauthorized</code></td>
+<td>手机未点击授权弹窗，解锁手机并点击“允许”</td>
+</tr>
+<tr>
+<td><code>no devices</code></td>
+<td>数据线不支持或 USB 模式错误，更换线或选择“文件传输”模式</td>
+</tr>
+<tr>
+<td><code>connect failed</code></td>
+<td>IP 地址错误或 Wi-Fi 切换，重新执行 adb tcpip 并 connect</td>
+</tr>
+<tr>
+<td>弹窗未出现</td>
+<td>进入开发者选项，点击“撤销 USB 调试授权”，然后重新连接 USB</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="📂-附录：常用-ADB-命令"><a href="#📂-附录：常用-ADB-命令" class="headerlink" title="📂 附录：常用 ADB 命令"></a>📂 附录：常用 ADB 命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs bash">adb devices                         <span class="hljs-comment"># 查看已连接设备</span><br>adb tcpip 5555                      <span class="hljs-comment"># 切换为 TCP 模式（Wi-Fi 调试）</span><br>adb connect &lt;手机IP&gt;:5555            <span class="hljs-comment"># 连接 Wi-Fi 设备</span><br>adb disconnect &lt;手机IP&gt;:5555         <span class="hljs-comment"># 断开 Wi-Fi 连接</span><br>adb shell                           <span class="hljs-comment"># 打开设备终端</span><br>adb push &lt;本地路径&gt; &lt;目标路径&gt;         <span class="hljs-comment"># 推送文件到设备</span><br>adb pull &lt;设备路径&gt; &lt;本地路径&gt;         <span class="hljs-comment"># 拉取文件到本地</span><br>adb install xxx.apk                 <span class="hljs-comment"># 安装 APK 应用</span><br>adb uninstall &lt;包名&gt;                 <span class="hljs-comment"># 卸载指定应用</span><br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="💡-建议设置（提高稳定性）"><a href="#💡-建议设置（提高稳定性）" class="headerlink" title="💡 建议设置（提高稳定性）"></a>💡 建议设置（提高稳定性）</h2><ul>
+<li>在开发者选项中开启 <strong>保持唤醒状态</strong></li>
+<li>USB 授权时勾选 “<strong>始终允许</strong>”</li>
+<li>避免频繁重启手机或切换 Wi-Fi，会导致 ADB 授权失效</li>
+</ul>
+<hr>
+<h2 id="✅-总结"><a href="#✅-总结" class="headerlink" title="✅ 总结"></a>✅ 总结</h2><p>ADB Wi-Fi 调试可以显著提升开发效率，适合部署、调试、测试频繁的开发者使用。<br>虽然部分华为设备的 USB 授权机制较严格，但按照本文流程操作一次成功，后续将非常稳定高效。</p>
+<hr>
 
                 
               </div>
@@ -358,8 +442,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>如何在github上搭建自己的博客</div>
-      <div>https://zhugit.github.io/2025/03/16/如何在github上搭建自己的博客/</div>
+      <div>华为手机如何使用WiFi调试（ADB）</div>
+      <div>https://zhugit.github.io/2025/03/23/华为手机如何使用WiFi调试（ADB）/</div>
     </div>
     <div class="license-meta">
       
@@ -371,7 +455,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年3月16日</div>
+          <div>2025年3月23日</div>
         </div>
       
       
@@ -403,18 +487,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/03/23/%E5%8D%8E%E4%B8%BA%E6%89%8B%E6%9C%BA%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8WiFi%E8%B0%83%E8%AF%95%EF%BC%88ADB%EF%BC%89/" title="华为手机如何使用WiFi调试（ADB）">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">华为手机如何使用WiFi调试（ADB）</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/01/26/test/" title="代理部署到服务器">
-                        <span class="hidden-mobile">代理部署到服务器</span>
+                      <a href="/2025/03/16/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="如何在github上搭建自己的博客">
+                        <span class="hidden-mobile">如何在github上搭建自己的博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
